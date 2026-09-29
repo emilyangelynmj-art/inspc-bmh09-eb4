@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPECCIONES BOMOHSA</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#064B87">
+</head>
+
+<body>
+    <div class="login-container">
+
+     <img src="logo.png" width="50" height="50">
+
+     <h1 style="color: blue;">BOMOHSA</h1>
+     <h2>Sistema de inspecciones</h2>
+
+    <div class="campo1">
+     <label for="usuario">Usuario</label>
+    <input type="text" id="usuario" placeholder="Ingrese su usuario">
+     </div>
+
+     <div class="campo2">
+    <label for="correo">Correo</label>
+     <input type="email" id="correo" placeholder="Ingrese su correo">
+     </div>
+
+    <div class="campo3">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="campo4">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" placeholder="Ingrese su contraseña">
+        </div>
+
+        <button type="button" id="btnIngresar">
+            Crear cuenta
+        </button>
+
+        <button type="button" id="btnIniciarSesion">
+            Ya tengo una cuenta
+        </button>
+
+        <p id="mensaje"></p>
+        <br>
+    <script src="scrip.js"></script>
+    <script>
+if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>

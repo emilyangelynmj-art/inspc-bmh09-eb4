@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspección BOMOHSA</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <button id="cerrarSesion" type="button">✕</button>
+
+        <img src="logo.png" width="50" height="50">
+
+        <h1 style="color: blue;">BOMOHSA</h1>
+        <h2>Inspección</h2>
+
+        <!-- Muestro el usuario que inició sesión -->
+        <p>
+            <strong>Usuario:</strong>
+            <span id="usuario"></span>
+        </p>
+
+        <!-- Aquí selecciono el tipo de formulario -->
+        <label for="formulario">Tipo de formulario</label>
+
+        <select id="formulario">
+
+            <!-- Esta opción aparece primero -->
+            <option value="">Seleccione un formulario</option>
+
+        </select>
+
+        <!-- Aquí escribo el área que voy a inspeccionar -->
+        <label for="area">Área</label>
+
+        <input
+        style="width: 286px;"
+            type="text"
+            id="area"
+            placeholder="Escriba su área"
+        >
+    
+        <!-- Muestro automáticamente la fecha -->
+        <p>
+            <strong  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Fecha:</strong>
+            <span id="fecha"></span>
+        </p>
+
+        <!-- Muestro automáticamente la hora -->
+        <p>
+            <strong style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hora de inicio:</strong>
+            <span id="hora"></span>
+        </p>
+
+        <!-- Con este botón comienzo la inspección -->
+        <button type="button" id="btnComenzar">
+         Comenzar inspección
+        </button>
+
+        <!-- Aquí muestro mensajes si falta algún dato -->
+        <p id="mensaje"></p>
+
+    </div>
+
+    <!-- Conecto esta página con su archivo JavaScript -->
+    <script src="segunda.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspección BOMOHSA</title>
+<link rel="stylesheet" href="estilo1.css">
+</head>
+
+<body>
+
+<div class="login-container">
+<!-- Botón para cerrar la inspección -->
+<button id="cerrarSesion" type="button">✕</button>
+
+<img src="logo.png" width="50" height="50">
+
+<h1 style="color: blue;">BOMOHSA</h1>
+<h2>Inspección Iniciada</h2>
+
+<!-- Muestro los datos de la inspección -->
+<p>
+<strong>Usuario:</strong>
+<span id="usuario"></span>
+</p>
+
+<p>
+<strong>Área:</strong>
+<span id="area"></span>
+</p>
+
+<p>
+<strong>Fecha:</strong>
+<span id="fecha"></span>
+</p>
+
+<p>
+<strong>Hora de inicio:</strong>
+<span id="hora"></span>
+</p>
+
+<hr>
+
+<!-- Aquí aparecerán automáticamente las preguntas -->
+<div id="contenedorPreguntas"></div>
+</div>
+
+<!-- Aquí muestro una foto en grande -->
+<div id="visorFoto" style="display: none;">
+<span id="cerrarFoto">✕</span>
+<img id="fotoGrande">
+
+</div>
+
+<!-- Conecto la página con tercera.js -->
+<script src="tercera.js"></script>
+
+</body>
+</html>
